@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+     *{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15% 0 15%;
+}
+.hidden{
+    display: none;
+}
+.banner{
+    background-color: rgb(100, 93, 93);
+    width: 100%;
+    height: 350px;
+}
+.grey-stripe{
+    background-color: rgb(228, 226, 226);
+    width: 70%;
+    height: 40px;
+    position: absolute;
+    top: 250px;
+}
+.myimg{
+    height: 200px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    position: absolute;
+    top: 50px;
+    left: 47%;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    border: rgb(233, 196, 31) 5px dotted;
+}
+.title{
+    text-transform: uppercase;
+    background-color: rgb(233, 196, 31);
+    display: inline;
+    padding: 1% 2% 1% 2%;
+    font-size: 3rem;
+    font-weight: 600;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-225px);
+    -webkit-transform: translateX(-225px);
+    -moz-transform: translateX(-225px);
+    -ms-transform: translateX(-225px);
+    -o-transform: translateX(-225px);
+}
+.desc{
+    text-align: center;
+    padding: 0.7%;
+}
+table{
+    width: 100%;
+}
+.sub{
+    display: inline;
+    font-size: 32px;
+    color: grey;
+    padding-left: 30px;
+     left:50px;
+    bottom: 60px;
+    position: relative;
+}
+.description{
+    text-align: justify;
+bottom :0px;
+
+}
+.icon{
+  border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    color: yellow;
+    background-color: gray;
+    position: absolute;
+
+}
+
+.border{
+    height: 76px;
+    width: 76px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+   border: 5px dotted yellow;
+   background-color:black ;
+    position: relative;
+    color: yellow;
+    bottom: 1px;
+    right: 10px;
+
+ 
+}
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 70%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 10%;
+    height: 12.8px;
+    cursor: pointer;
+    background: yellow;
+    border-radius: 25px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    
+    border: 0px solid #000000;
+    height: 20px;
+    width: 15px;
+    border-radius: 7px;
+    background: white;
+  
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: yellow;
+  }
+  input[type=range]::-moz-range-track {
+    width: 10%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    
+    background: #ac51b5;
+    border-radius: 20px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-moz-range-thumb {
+  
+    border: 0px solid #000000;
+    height: 20px;
+    width: 19px;
+    border-radius: 7px;
+    background: #65001c;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 10%;
+    height: 10px;
+    
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 39px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #ac51b5;
+    border: 0px solid #000101;
+    border-radius: 20px;
+   
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #ac51b5;
+    border: 0px solid #000101;
+    border-radius: 20px;
+    
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: yellow;
+    cursor: pointer;
+    overflow: hidden;
+    
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: yellow;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background:white;
+  }
+
+.child{
+  
+  float: left;
+  width: 50%;
+  
+}
+#verticle-line{
+    width: 50% 1px;
+    height: 100px;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="banner">
+        
+    </div>
+    <div class="grey-stripe">
+      
+    </div>
+
+  <img  class="myimg" src="elon.jpg" alt="">
+    <p class="title">Brain dudey</p>
+    <div class="desc">Web developer |MERN STACK |GUVI|</div>
+    <hr>
+</header>
+<!--this is an first half-->
+
+
+<section  class="child">
+<table>
+    
+           
+            
+               <tr>
+                   <td>
+          
+           <article>
+               <div>
+                   <div class="icon-background"></div>
+                   <div class="border">
+                   <i style="color: yellow;padding-left: 15px;" class="fa fa-user fa-4x"></i>
+                   
+                   </div>
+                  
+                   <p class="sub"> Profile</p>
+               </div>
+               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi sint veniam id cumque, autem saepe vero maxime labore corporis nobis. 
+                     Voluptas, nisi. Nulla ad recusandae unde adipisci perspiciatis libero.</p>
+            
+            </article>
+       </td> 
+    </tr>
+
+    <tr>
+        <td>
+            <article class="description">
+                <div>
+                    <div class="icon-background"></div>
+                    <div class="border">
+                 <i style="padding-left: 10px;" class="fa fa-flask fa-4x" ></i>
+                    </div>
+                   
+                    <p class="sub">Skills</p>
+                </div>
+               
+                <table>
+                  
+              
+             
+          <tr>
+            <td colspan="2" style="text-align: center;"><b>Technical skills</b></td>
+        </tr>
+        <tr>
+            <td>
+                HTML
+            </td>
+            <td>
+                <input type="range" name="" id="" class="range">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                css
+            </td>
+            <td>
+                <input type="range" name="" id="" class="range">
+            </td>
+        </tr>
+        <tr>
+          <td>
+              Javascript
+          </td>
+          <td>
+              <input type="range" name="" id="" class="range">
+          </td>
+      </tr>
+      <tr>
+        <td>
+            Mango
+        </td>
+        <td>
+            <input type="range" name="" id="" class="range">
+        </td>
+    </tr>
+    <tr>
+      <td>
+          Redux
+      </td>
+      <td>
+          <input type="range" name="" id="" class="range">
+      </td>
+  </tr>
+  <tr>
+    <td>
+        Deployment
+    </td>
+    <td>
+        <input type="range" name="" id="" class="range">
+    </td>
+</tr>
+<tr>
+    <td>
+        React
+    </td>
+    <td>
+        <input type="range" name="" id="" class="range">
+    </td>
+</tr>
+  <tr>
+    <td colspan="2" style="text-align: center;"><b>Additional skills</b></td>
+</tr>
+<tr>
+    <td>
+        Project Managment
+    </td>
+    <td>
+        <input type="range" name="" id="" class="range">
+    </td>
+</tr>
+<tr>
+    <td>
+        Requirement
+    </td>
+    <td>
+        <input type="range" name="" id="" class="range">
+    </td>
+</tr>
+<tr>
+  <td>
+      Business Development
+  </td>
+  <td>
+      <input type="range" name="" id="" class="range">
+  </td>
+</tr>
+<tr>
+<td>
+    Editing
+</td>
+<td>
+    <input type="range" name="" id="" class="range">
+</td>
+</tr>
+<tr>
+<td>
+  Fundraising
+</td>
+<td>
+  <input type="range" name="" id="" class="range">
+</td>
+</tr>
+
+</table>
+            </article>
+</td>
+    </tr>
+       <tr>
+           <td>
+            <div>
+                <div class="icon-background"></div>
+                <div class="border">
+                    <i style="padding-left: 13px; padding-top: 13px;"  class="fa fa-briefcase fa-3x" ></i>
+                </div>
+                
+            
+               
+                <p class="sub">Work Experience</p>
+            </div>
+        </td>
+    </tr>
+           <tr>
+               <td>
+                   <h3>Event Manager</h3>
+               </td>
+               <td>
+                   03/2014 02/2017 
+               </td>
+           </tr>
+           <tr>
+               <td>
+                C3 present Washingten Dc
+               </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                   <p class="description"> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+ 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                   <p> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+ 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                   <p> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+ 
+                </td>
+            </tr>
+     
+</article>
+
+    
+</table>
+    
+</section>
+
+<section class="child">
+    <table>
+               
+        <tr>
+            <td>
+             <div>
+                 <div class="icon-background"></div>
+                 <div class="border">
+                     <i style="padding-left: 13px; padding-top: 13px;"  class="fa fa-briefcase fa-3x" ></i>
+                 </div>
+                
+                 <p class="sub">Work Experience</p>
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Community Relation<br> Manager</h3>
+            </td>
+            <td>
+                03/2014 02/2017 
+            </td>
+        </tr>
+        <tr>
+            <td>
+             Gay & Lesbian Elder Houshing,Los Angeles
+            </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                <p class="description"> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+
+             </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                <p> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+
+             </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                <p> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+
+             </td>
+         </tr>
+         <tr>
+            <td>
+             <div>
+                 <div class="icon-background"></div>
+                 <div class="border">
+                     <i style="padding-left: 10px;padding-top: 15px; "   class="fa fa-graduation-cap fa-3x" ></i>
+                     
+                 </div>
+                
+                 <p class="sub">Education</p>
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Engineering Immersion<br> Program</h3>Thinkful,chicago,il<br>
+                
+            </td>
+            <td>
+                11/2018 06/2018 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi ea similique amet, modi porro sint quaerat mollitia dicta molestiae eligendi veritatis ipsam inventore optio odio minima quam quo voluptate.</p><br>
+             Gay & Lesbian Elder Houshing,Los Angeles
+            </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                <p class="description" style="padding-left: 200px;"> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+
+             </td>
+         </tr>
+         <tr>
+             <td colspan="2">
+                <p> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+
+             </td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <p><li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               <p> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               <p> <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates quis voluptate. Amet dignissimos nihil officia voluptas sed voluptatem ad. Nulla quasi aliquid, repellendus inventore dolores officiis ipsam veritatis ipsum.</li></p>
+
+            </td>
+        </tr><br>
+        <tr>
+            <td>
+                <p><br><h4>BA ENGLISH</h4><br>University of Californiya,Los Angeles</p>
+            </td>
+            <td>
+                09/2001 01/2005
+            </td>
+        </tr>
+
+    
+</table> 
+</section>
+
+</body>
+</html>
